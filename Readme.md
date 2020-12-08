@@ -1,4 +1,4 @@
-APW Class Group Members Marcel Njighe-Tezeh, Sebastian Castellon, Kofi Asante, and  Harshitha Adusumalli 
+
 
                       Project Proposal Summary
 
