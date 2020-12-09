@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 //we might use this db schema if we have enough time to make users create questions in the front-end
 const PostSchema = mongoose.Schema({
+  category:{
+type: String,
+require:true
+  },
   question: {
     type: String,
     required: true

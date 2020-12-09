@@ -1,7 +1,7 @@
 {
   "name": "v2-apw",
   "version": "1.0.0",
-  "description": "APW Class Group Members Marcel Njighe-Tezeh, Sebastian Castellon, Kofi Asante, and  Harshitha Adusumalli Group team leader is Koffi Asante.",
+  "description": "APW Class Group project",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
