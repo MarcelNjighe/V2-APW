@@ -1,6 +1,9 @@
 const express = require("express");
 const Post = require("../models/Post");
 const router = express.Router();
+var bodyParser = require('body-parser');
+
+router.use(bodyParser.json());
 
 //get all the posts
 router.get("/", async (req, res) => {
@@ -20,6 +23,8 @@ router.post("/", async (req, res) => {
     incorrect_answers: req.body.incorrect_answers
   });
   try {
+
+    console.log(`req.body`, req.body);
     const postSaved = await post.save();
     res.json(postSaved);
   } catch (err) {

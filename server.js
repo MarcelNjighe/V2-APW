@@ -18,7 +18,7 @@ app.use("/start", express.static(`${__dirname}/public`));
 require("./loginn/passport")(passport);
 
 
-var uri ="mongodb://localhost:27017/quizdb";
+var uri ="mongodb+srv://admin1:Password@cluster0.vrpsy.mongodb.net/quizdb?retryWrites=true&w=majority";
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
 
 const connection = mongoose.connection;

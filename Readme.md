@@ -1,4 +1,3 @@
-APW Class Group Members Marcel Njighe-Tezeh, Sebastian Castellon, Kofi Asante, and  Harshitha Adusumalli Group team leader is Koffi Asante.
 
 
                       Project Proposal Summary
