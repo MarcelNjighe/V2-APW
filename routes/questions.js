@@ -2,7 +2,7 @@ const express = require("express");
 const Post = require("../models/Post");
 const router = express.Router();
 
-
+var bodyParser =require('body-parser');
 router.use(bodyParser.json());
 
 //get all the posts
