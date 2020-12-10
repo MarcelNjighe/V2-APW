@@ -48,8 +48,8 @@ initialize = () => {
     });
 };
 //CONSTANTS
-const CORRECT_BONUS = 20;
-const MAX_QUESTIONS = 5;
+const CORRECT_BONUS = 4;
+const MAX_QUESTIONS = 25;
 
 startQuiz = () => {
   questionCounter = 0;

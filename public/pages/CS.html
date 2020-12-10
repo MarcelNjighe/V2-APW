@@ -8,9 +8,50 @@
     <title>Computer Science</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+          font-size: 28px;
+        }
+        
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          position: -webkit-sticky; 
+          position: sticky;
+          top: 0;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #4CAF50;
+        }
+        </style>
 </head>
 
 <body>
+    <ul>
+        <li><a class="active" href="../home.html">Home</a></li>
+        <li><a href="./rules.html"> Rules</a></li>
+        <li><a href="./category.html">category</a></li>
+      </ul>
     <div class="container">
 
         <div id="quiz" class="justify-center flex-column">

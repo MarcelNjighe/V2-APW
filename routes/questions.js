@@ -1,26 +1,15 @@
 const express = require("express");
 const Post = require("../models/Post");
 const router = express.Router();
+var bodyParser = require('body-parser');
 
-var bodyParser =require('body-parser');
 router.use(bodyParser.json());
 
 //get all the posts
 router.get("/", async (req, res) => {
   try {
-    if(category = Computer){
-
-    const Question = await Post.find();
-    res.json(Question.CS);
-    }
-    else if(category = GeneralK){
-      const Question = await Post.find();
-    res.json(Question.GK)
-    }
-    else {
-      const Question = await Post.find();
-    res.json(Question.Politics)
-    }
+    const posts = await Post.find();
+    res.json(posts);
   } catch (err) {
     res.json({ msg: err });
   }
