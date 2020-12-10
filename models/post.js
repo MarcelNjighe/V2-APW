@@ -16,7 +16,8 @@ require:true
   incorrect_answers: {
     type: Array,
     required: true
-  }
+  },
+  
 });
 
 module.exports = mongoose.model("Posts", PostSchema);
