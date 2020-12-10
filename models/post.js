@@ -5,6 +5,14 @@ const PostSchema = mongoose.Schema({
 type: String,
 require:true
   },
+  type:{
+  type:String,
+  require: false
+  },
+  difficulty:{
+    type:String,
+    require : false
+  },
   question: {
     type: String,
     required: true
@@ -16,8 +24,7 @@ require:true
   incorrect_answers: {
     type: Array,
     required: true
-  },
-  
+  }
 });
 
 module.exports = mongoose.model("Posts", PostSchema);
