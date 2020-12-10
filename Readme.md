@@ -1,3 +1,9 @@
+             Steps to run this program
+1  git clone https://github.com/MarcelNjighe/V2-APW
+2  mongorestore --db=quizdb dump/quizdb/
+3  node server.js
+4  http://localhost:3000/
+5  Register or login to access all content
 
 
                       Project Proposal Summary
