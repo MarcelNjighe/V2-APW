@@ -1,4 +1,4 @@
-             Steps to run this program
+             Steps to run this program (Firt, start mongo on your device)
 1  git clone https://github.com/MarcelNjighe/V2-APW
 2  mongorestore --db=quizdb dump/quizdb/
 3  node server.js
