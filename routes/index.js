@@ -3,7 +3,7 @@ const router = express.Router();
 const { ensureAuthenticated, forwardAuthenticated } = require('../loginn/auth');
 
 // Welcome Page
-router.get('/', forwardAuthenticated, (req, res) => res.render('welcome'));
+router.get('/', forwardAuthenticated, (req, res) => res.render('welcome.pug'));
 
 // Dashboard
 router.get('/dashboard', ensureAuthenticated, (req, res) =>

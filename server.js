@@ -1,5 +1,4 @@
 const express = require("express");
-const expressLayouts = require("express-ejs-layouts");
 const mongoose = require("mongoose");
 const passport = require("passport");
 const flash = require("connect-flash");
@@ -27,8 +26,8 @@ connection.once("open", function() {
   console.log("MongoDB database connected successfully");
 });
 
-app.use(expressLayouts);
-app.set("view engine", "ejs");
+
+app.set("view engine", "pug");
 app.use(express.static("public"));
 // Express body parser
 app.use(express.urlencoded({ extended: true }));

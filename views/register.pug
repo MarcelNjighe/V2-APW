@@ -1,0 +1,21 @@
+doctype html
+.row.mt-5
+  .col-md-6.m-auto
+    .card.card-body
+      h1.text-center.mb-4
+        i.fas.fa-user-plus
+        |  Register
+      form(action='/users/register' method='POST')
+        .form-group
+          input#name.form-control(type='name' name='name' placeholder='Enter Name' value= '')
+        .form-group
+          input#email.form-control(type='email' name='email' placeholder='Enter Email' value='' )
+        .form-group
+          input#password.form-control(type='password' name='password' placeholder='Create Password' value='')
+        button.btn.btn-block(type='submit')
+          | Register
+      p.lead.mt-2.text-center
+        | Have An Account ? 
+        a(href='/users/login') Login
+        |  | 
+        a(href='/') Home
